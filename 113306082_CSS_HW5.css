@@ -1,0 +1,101 @@
+body {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100vh;
+  	background-color: #eeede1;
+  	padding:20px;
+  	font-family: Arial, sans-serif;
+}
+.main-container {
+	display: grid;
+  	grid-template-columns: 330px 540px;
+  	max-width: 900px;
+  	background-color: #fff;
+  	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  	border-radius: 8px;
+  	overflow: hidden;
+  	height: 1150px;
+}
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f8ff;
+}
+.photo-panel {
+  height: 40%;
+  background-image: url("https://drive.google.com/thumbnail?id=1gZVlNHa7pygSqKeEdIQlvDW8yxEj-gzr&sz=w1366"); /* Add your image */
+  background-size: cover;
+  background-position: center;
+}
+.name {
+	text-align:center;
+}
+.text-content {
+  padding: 20px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nccu-icon {
+	width:300px;
+	align-self:flex-end;
+}
+section {
+	margin:20px;
+}
+section h2 {
+	border-bottom:2px solid black;
+	padding-bottom:5px;
+	margin-bottom:60px;
+	margin-top:60px;
+}
+.timeline .timeline-item {
+	display:flex;
+	gap:10px;
+	margin-bottom:10px;
+}
+.year {
+	font-size:18px;
+	font-weight:bold;
+	color:blue;
+}
+.description {
+    font-size: 18px;
+    color: black;
+}
+.homework-list ul {
+	list-style:none;
+	padding:0;
+	gap:10px;
+}
+.homework-list ul li a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+  gap:10px;
+}
+.homework-list ul li a:hover {
+  color: tomato;
+}
+.favorite-music .albums {
+	display:flex;
+	justify-content: center;
+	gap:40px;
+}
+.favorite-music .albums img {
+	display:flex;
+	width:90px;
+	height:50px;
+	border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.favorite-music .album img:hover {
+	transform:scale(1.05);
+}
+.note {
+	font-size:0.85rem;
+	color:darkgray;
+}
